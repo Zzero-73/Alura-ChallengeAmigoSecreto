@@ -1,6 +1,8 @@
 // // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 //Para almacenar los datos de los nombres
 let Datos={ListaAmigosIngresados:[]};
+// Hacemos que el puntero este dentro del cuadro de texto
+document.getElementById('amigo').focus();
 //crear una función para asignar los nombres que ingresaremos
 function agregarAmigo(){
     //Ingresamos un nombre a la caha de texto
@@ -24,7 +26,7 @@ function agregarAmigo(){
         Datos.ListaAmigosIngresados.push(NombreAmigo);
         // Limpiamos el input
         document.getElementById('amigo').value = '';
-         // Hacemos que vuelva al cuadro de escribtura
+        // Hacemos que el puntero este dentro del cuadro de texto
         document.getElementById('amigo').focus();
         //Habilitamos el boton
         document.getElementById('Sortear').removeAttribute('disabled');
@@ -43,6 +45,6 @@ function sortearAmigo(){
     document.getElementById('Sortear').setAttribute('disabled','true');
     //Limpar la variable lista
     Datos.ListaAmigosIngresados=[]
-    // Hacemos que vuelva al cuadro de escribtura
+    // Hacemos que el puntero este dentro del cuadro de texto
     document.getElementById('amigo').focus();
 }
