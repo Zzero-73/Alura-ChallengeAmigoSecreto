@@ -13,6 +13,15 @@ function agregarAmigo(){
         document.getElementById('amigo').focus();
         return;
     }
+    else if(Datos.ListaAmigosIngresados.includes(NombreAmigo)){
+        // Limpiamos el input
+        document.getElementById('amigo').value = '';
+        alert('⚠️ Ya existe un mismo nombre guardado 🧐​👉​');
+        // Hacemos que el puntero este dentro del cuadro de texto
+        document.getElementById('amigo').focus();
+        return;
+
+    }
     else{
         //Limpiar los nombres mostrados en la web
         document.getElementById('resultado').innerHTML = '';
