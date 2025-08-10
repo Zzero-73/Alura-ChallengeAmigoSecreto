@@ -10,7 +10,7 @@
 <hr noshade>
 <b>* Descripción:</b><br>
 Este pequeño programa te envía un nombre al azar de los nombres previamente ingresados.<br>
-Asi mismo tiene 7 particulariades:
+Asi mismo tiene 8 particulariades:
 <p>
 <table>
   <td>
@@ -22,6 +22,7 @@ Asi mismo tiene 7 particulariades:
       <li>El botón "Sortear Amigo" se deshabilitará automáticamente después de haberse dado el nombre sorteado.</li>
       <li>Podrás ingresar otros nombres y la lista se limpiará sola para agregar a los nuevos nombres.</li>
       <li>Saldra un mensaje de advertencia cuando no hayas ingresado ningún nombre.</li>
+      <li>Saldra un mensaje de advertencia si es un nombre repetido.</li>
     </ul>
   </td>
 </table>
