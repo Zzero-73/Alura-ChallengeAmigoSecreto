@@ -9,6 +9,8 @@ function agregarAmigo(){
     let NombreAmigo=document.getElementById('amigo').value.trim();
     if (NombreAmigo===''){
         alert('⚠️ Por favor ingresar un nombre válido 🧐​👉​');
+        // Hacemos que el puntero este dentro del cuadro de texto
+        document.getElementById('amigo').focus();
         return;
     }
     else{
